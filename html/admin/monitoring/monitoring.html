@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simbas Banggai</title>
+  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../../../assets/css/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="../../../../assets/css/bootstrap.min.css" /> -->
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="" class="text-nowrap logo-img fs-6 text-blue-600 fw-semibold"> SIMBAS
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+         <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Admin Page</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+                <span class="d-flex">
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+              <ul aria-expanded="false" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="../dashboard.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Overview</span>
+                  </a>
+                </li>
+                <!-- <li class="sidebar-item">
+                  <a href="../alumni/dashboard.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Dashboard User</span>
+                  </a>
+                </li> -->
+
+              </ul>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="../ui-buttons.html" aria-expanded="false">
+                <span class="d-flex">
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Data Substansi</span>
+              </a>
+              <ul aria-expanded="false" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="../data_substansi/uploaddokumen.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Upload Dokumen</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../data_substansi/laporankinerja.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Laporan Kinerja</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../data_substansi/paktaintegritas.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Pakta Integritas</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="../data_substansi/dokumenlainnya.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Dokumen Lainnya</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../monitoring/monitoring.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cards"></i>
+                </span>
+                <span class="hide-menu">Monitoring</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+                <span class="d-flex">
+                  <i class="ti ti-file-text"></i>
+                </span>
+                <span class="hide-menu">Master Data</span>
+              </a>
+              <ul aria-expanded="false" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="../master_data/aset/dataaset.html" class="sidebar-link">
+                    <div class="round-16 d-flex align-items-center justify-content-center">
+                      <i class="ti ti-circle"></i>
+                    </div>
+                    <span class="hide-menu">Data Aset</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../../../assets/images/profile/user-1.jpg" alt="" width="35" height="35"
+                    class="rounded-circle">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-mail fs-6"></i>
+                      <p class="mb-0 fs-3">My Account</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-list-check fs-6"></i>
+                      <p class="mb-0 fs-3">My Task</p>
+                    </a>
+                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--  Header End -->
+
+      <div class="container-fluid">
+        <!--  Row 1 -->
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="card w-100">
+              <div class="card-body p-4 d">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-semibold mb-4 d-inline">Monitoring</h5>
+                  <div class="d-inline">
+                    <button href="" data-bs-toggle="modal" data-bs-target="#modal-tambah-aset"
+                      class="btn btn-primary d-inline align">Cetak</button>
+
+                    <!-- Vertically centered modal -->
+                    <div class="modal fade" id="modal-tambah-aset" tabindex="-1" aria-labelledby="vertical-center-modal"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex align-items-center">
+                            <h4 class="modal-title" id="myLargeModalLabel">
+                              Tambah Aset
+                            </h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form">
+                              <div class="mb-3 row">
+                                <label for="example-text-input" class="col-form-label">Nama Aset</label>
+                                <div>
+                                  <input class="form-control" type="text" placeholder="Masukkan Nama Aset"
+                                    id="example-text-input" />
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary text-white font-medium waves-effect text-start"
+                              data-bs-dismiss="modal">
+                              Cetak
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="table-responsive d-block">
+                  <table id="demo-foo-addrow" class="table table-hover text-nowrap mb-0 align-middle" data-paging="true"
+                    data-paging-size="7">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="border-bottom-0">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">No</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Informasi Aset</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Jenis Aset</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Umur Aset</h6>
+                        </th>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Waktu Monitoring</h6>
+                        </th>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Status</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Aksi</h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border-bottom-0">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">1</span>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Motor Honda Vario 150 VIN 2019 </p>
+                          <p class="mb-0 fw-normal">3020104001</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">ALAT ANGKUTAN BERMOTOR</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">5 Tahun</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">1 / Sebulan</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Sudah Monitoring</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">Monitoring</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalContainer"></div>
+
+</body>
+
+
+
+<script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/sidebarmenu.js"></script>
+<script src="../../../assets/js/app.min.js"></script>
+<script src="../../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="../../../assets/libs/simplebar/dist/simplebar.js"></script>
+<script src="../../../assets/js/dashboard.js"></script>
+</body>
+
+
+</html>
